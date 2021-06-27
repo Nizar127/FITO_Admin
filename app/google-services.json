@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "123577410900",
+    "firebase_url": "https://fito-f8bb9-default-rtdb.firebaseio.com",
+    "project_id": "fito-f8bb9",
+    "storage_bucket": "fito-f8bb9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:123577410900:android:03f5266052af37847194c1",
+        "android_client_info": {
+          "package_name": "com.FITO.FitoAdmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "123577410900-60hmkcvmiqr7nlc1ua140k05a17tnb22.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDiasXTDZHPBEnE1l2ku0F0iij8yQyHAM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "123577410900-60hmkcvmiqr7nlc1ua140k05a17tnb22.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:123577410900:android:282b8963f87d8bf07194c1",
+        "android_client_info": {
+          "package_name": "com.blessapp.fito"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "123577410900-60hmkcvmiqr7nlc1ua140k05a17tnb22.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDiasXTDZHPBEnE1l2ku0F0iij8yQyHAM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "123577410900-60hmkcvmiqr7nlc1ua140k05a17tnb22.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

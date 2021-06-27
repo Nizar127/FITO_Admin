@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE88A"
+    tools:context=".newProductActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_add_new_product"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <ImageView
+                    android:id="@+id/back_btn_add_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/arrow_back" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/get_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cairo_semibold"
+                    android:text="New Coupon"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/select_product_image"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_below="@+id/toolbar_add_new_product"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:cropToPadding="false"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_add_a_photo_black_24dp" />
+
+            <EditText
+                android:id="@+id/coupon_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/select_product_image"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint="Product Name"
+                android:inputType="textMultiLine"
+                android:padding="20dp"
+                android:textColor="#423A30"
+                android:textColorHint="#80423A30"
+                android:textColorLink="#423A30" />
+
+            <EditText
+                android:id="@+id/coupon_highlight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/coupon_name"
+                android:layout_margin="10dp"
+                android:hint="Product Description"
+                android:inputType="textMultiLine"
+                android:padding="20dp"
+                android:textColor="#423A30"
+                android:textColorHint="#80423A30"
+                android:textColorLink="#423A30" />
+
+            <EditText
+                android:id="@+id/product_points"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/coupon_highlight"
+                android:layout_margin="10dp"
+                android:hint="Product Points"
+                android:inputType="numberDecimal"
+                android:padding="20dp"
+                android:textColor="#423A30"
+                android:textColorHint="#80423A30"
+                android:textColorLink="#423A30" />
+
+            <EditText
+                android:id="@+id/sponsoredName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/product_points"
+                android:layout_margin="10dp"
+                android:hint="Sponsored Name"
+                android:inputType="textMultiLine"
+                android:padding="20dp"
+                android:textColor="#423A30"
+                android:textColorHint="#80423A30"
+                android:textColorLink="#423A30" />
+
+            <EditText
+                android:id="@+id/sponsoredTerm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sponsoredName"
+                android:layout_margin="10dp"
+                android:hint="Term and Conditions"
+                android:inputType="textMultiLine"
+                android:padding="20dp"
+                android:textColor="#423A30"
+                android:textColorHint="#80423A30"
+                android:textColorLink="#423A30" />
+
+            <EditText
+                android:id="@+id/sponsoredContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sponsoredTerm"
+                android:layout_margin="10dp"
+                android:hint="Contact"
+                android:inputType="textMultiLine"
+                android:padding="20dp"
+                android:textColor="#423A30"
+                android:textColorHint="#80423A30"
+                android:textColorLink="#423A30" />
+
+            <EditText
+                android:id="@+id/couponValidity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sponsoredContact"
+                android:layout_margin="10dp"
+                android:hint="Coupon Validity"
+                android:inputType="date"
+                android:padding="20dp"
+                android:textColor="#423A30"
+                android:textColorHint="#80423A30"
+                android:textColorLink="#423A30" />
+
+
+            <Button
+                android:id="@+id/add_new_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/couponValidity"
+                android:layout_margin="15dp"
+                android:background="#423A30"
+                android:fontFamily="@font/bowlby_one_sc"
+                android:padding="20dp"
+                android:text="Add Product"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

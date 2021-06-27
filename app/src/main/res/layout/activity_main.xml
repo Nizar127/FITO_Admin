@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE88A"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/thetext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/bowlby_one_sc"
+            android:gravity="center"
+            android:text="REDEEM"
+            android:textColor="#423A30"
+            android:textSize="34sp" />
+
+        <LinearLayout
+            android:id="@+id/thebtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/thetext"
+            android:gravity="center_horizontal"
+            >
+
+            <Button
+                android:id="@+id/btnGenQRCode"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:background="@color/purple_500"
+                android:text="Generate QR Code"
+                android:textColor="@color/white"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/cairo_semibold"/>
+
+            <Button
+                android:id="@+id/btnAddNewProduct"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:text="Add New Product"
+                android:textColor="@color/white"
+                android:fontFamily="@font/cairo_semibold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/recycler"
+            android:layout_width="393dp"
+            android:layout_height="302dp"
+            android:layout_below="@+id/thebtn"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerviewSystem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
