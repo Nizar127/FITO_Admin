@@ -52,7 +52,7 @@ public class newProductActivity extends AppCompatActivity {
         setContentView(R.layout.activity_new_product);
 
         prodImgRef = FirebaseStorage.getInstance().getReference().child("Product Images");
-        prodRef = FirebaseDatabase.getInstance().getReference().child("Coupon");
+        prodRef = FirebaseDatabase.getInstance().getReference("Coupon");
         backBtn = findViewById(R.id.back_btn_add_new);
 
         addNewProdBtn = findViewById(R.id.add_new_product);

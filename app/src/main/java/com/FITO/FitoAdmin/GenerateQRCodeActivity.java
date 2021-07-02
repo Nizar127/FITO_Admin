@@ -170,7 +170,7 @@ public class GenerateQRCodeActivity extends AppCompatActivity {
     private void saveImage() {
         Log.d(TAG, "saveImage: downloading");
 
-        BitmapDrawable bitmapDrawable = (BitmapDrawable) downloadBtn.getDrawable();
+        BitmapDrawable bitmapDrawable = (BitmapDrawable) outputQR.getDrawable();
         Bitmap bitmap = bitmapDrawable.getBitmap();
         //Bitmap bitmap = (BitmapDrawable) downloadBtn.getDrawable().getBitmap();
         FileOutputStream outputStream = null;
@@ -178,6 +178,7 @@ public class GenerateQRCodeActivity extends AppCompatActivity {
         //File dir = new File(file.getAbsolutePath() + "/QRPics:");
         File file = new File(getExternalFilesDir(null) + "/QRPics:");
         file.mkdir();
+        Log.d(TAG,"Working File: " + file);
 
         String filename = String.format("%d.png", System.currentTimeMillis());
         File outfile = new File(file, filename);
@@ -194,6 +195,7 @@ public class GenerateQRCodeActivity extends AppCompatActivity {
         }
         try{
             outputStream.close();
+            Toast.makeText(GenerateQRCodeActivity.this,"Data Inserted",Toast.LENGTH_SHORT).show();
         }catch (Exception e){
             e.printStackTrace();
         }
